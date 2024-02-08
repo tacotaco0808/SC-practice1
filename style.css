@@ -1,0 +1,187 @@
+@charset "UTF-8";
+/*
+Theme Name: MY THEME
+Author: CATWALK
+Description: オリジナルテーマです
+Version: 1.0
+ */
+ /*変数*/
+:root {
+  --f1: 2.44em; /* 39.04px */
+  --f2: 1.95em; /* 31.2px */
+  --f3: 1.56em; /* 24.96px */
+  --f4: 1.25em; /* 20px */
+  --f5: 1em; /* 16px */
+  --f6: 0.8em; /* 12.8px */
+  --basecolor: #4c83ff; /* 基本色 */
+  --myfont: 'Josefin Sans', sans-serif;
+  --myw: 720px;/*標準幅*/
+  --basefont: 'Montserrat', sans-serif;
+}
+/*fontsettings*/
+body {
+  font-family: var(--basefont);
+}
+p {
+  line-height: 1.8;
+  font-size: var(--f5);
+}
+a {
+  text-decoration:none;
+  color: #b3b4b6;
+}
+h1 {
+  font-size: var(--f1);
+}
+h2 {
+  font-size: var(--f2);
+}
+h3 {
+  font-size: var(--f3);
+}
+h4 {
+  font-size: var(--f4);
+}
+h5 {
+  font-size: var(--f5);
+}
+h6 {
+  font-size: var(--f6);
+}
+/*記事の幅そろえる ※.mycontainerをヘッダーにも適用させている*/
+body{
+  margin: 0;
+}
+.mycontainer{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+/*header*/
+.myhead{
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 20px 0;
+}
+.myhead img{
+width: 240px;
+height: 60px;
+}
+.myhead::after{
+  font-family: "dashicons";    
+  content: "\f333";
+  font-size: var(--f2);
+}
+/*main*/
+h4 {
+  color: #0052CC;
+  margin-bottom: 5px;
+}
+h1{
+  margin: 20px 0px 0px 0px;
+  line-height: 1;/*1で行間なし*/
+}
+p{
+  margin: 20px 0px 20px 0px;
+  line-height: 1.5;
+}
+.column_center{
+  text-align: center;
+}
+.column_radius{
+  border-radius: 30px;
+  padding: 50px;
+}
+.wp-block-cover{
+  margin: 0px -20px 0px -20px;
+}
+/*circle*/
+.circlewhite{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    color: #0052cc;
+    background-color:#f3f5f7;
+    line-height: 100px;
+    text-align: center;
+    border-radius: 50%;
+}
+.circleblue{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    color: #f3f5f7;
+    background-color:#0052cc;
+    line-height: 100px;
+    text-align: center;
+    border-radius: 50%;
+}
+/*投稿場所*/
+.mypostlist{
+  margin: 20px;
+  margin-bottom: 50px;
+}
+.mypostlist article{
+  background: #f3f5f7;
+  border-radius: 30px;
+  padding: 50px 30px 50px 30px;
+  margin-bottom: 20px;
+}
+.mypostlist h3{
+  color: #333;
+}
+.mypostlist img{
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+}
+/*footer*/
+.myfoot{
+  background: #02060c;
+  color: #b3b4b6;
+}
+.myfoot > p{
+  font-size: 13px;
+  margin: 0;
+}
+.myfoot  h3{
+  color: white;
+}
+.foot-wrapper{
+  padding-top: 40px;
+  padding: 10px;
+}
+.myfoot img{
+  width: 209px;
+  height: auto;
+}
+.wrap-flex{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.wrap-flex ul{
+  padding: 0;
+  width: 330px;
+}
+.wrap-flex li{
+  list-style: none;
+  line-height: 2;
+}
+
+.icon-x::after{
+  background: rgba(255, 255, 255, 0.1);
+  width: 55px;
+  height: 55px;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: "dashicons";    
+  font-size: var(--f2);
+  content: "\f301";
+  color: aliceblue;
+}
+.wrap-center{
+  text-align: center;
+  color: white;
+  padding: 40px 0px 40px 0px;
+}
